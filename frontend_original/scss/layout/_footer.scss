@@ -1,0 +1,145 @@
+#footer {
+	background-color: $green;
+	color: $white;
+	font-size: rem-calc(15px);
+	padding-top: 2rem;
+
+	@include breakpoint(large) {
+		padding-top: rem-calc(59px);
+	}
+
+	.row {
+		margin: rem-calc(0 -15px);
+
+		@include breakpoint(xlarge) {
+			margin: rem-calc(0 -37px); 
+		} 
+	}
+
+	a {
+		color: $white;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	h3 {
+		font-size: rem-calc(18px);
+		text-transform: uppercase;
+		margin-bottom: rem-calc(19px);
+		font-weight: 700;
+		letter-spacing: 1px;
+	}
+
+	.holder {
+		@include breakpoint(xlarge) {
+			padding: rem-calc(0 0 24px);
+		}
+
+		&.holder-p {
+			@include breakpoint(xlarge) {
+				padding-left: rem-calc(70px);
+			}
+		}
+	}
+
+	>.container {
+		padding-bottom: 1rem;
+
+		@include breakpoint(large) {
+			padding-bottom: rem-calc(55px);
+		}
+	}
+}
+
+.footer-nav {
+	li {
+		@include breakpoint(large) {
+			margin-bottom: rem-calc(13px);
+		}
+	}
+}
+
+.social-media {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 -5px !important;
+
+	@include breakpoint(medium) {
+		justify-content: flex-start;
+	}
+
+	li {
+		margin: rem-calc(0 5px 10px);
+	}
+
+	a {
+		@include size(2.5625rem);
+
+		border-radius: 50%;
+		display: inline-block;
+		vertical-align: middle;
+		background-color: #faf9f9;
+		color: $green !important;
+		position: relative;
+		font-size: rem-calc(20px);
+
+		&:hover {
+			color: $black !important;
+		}
+
+		i {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}
+
+.footer-bottom {
+	background-color: $dark-gray;
+	padding: 1rem 0;
+
+	@include breakpoint(large) {
+		padding: rem-calc(26px 0);
+	}
+}
+
+.footer-bottom-list {
+	@include breakpoint(medium) {
+		display: flex;
+		flex-wrap: wrap;
+		line-height: 1;
+		margin: rem-calc(0 -7px) !important;
+	}
+
+	li {
+		margin-bottom: rem-calc(5px);
+
+		@include breakpoint(medium) {
+			border-right: 1px solid $white;
+			padding: rem-calc(0 7px);
+			margin-bottom: rem-calc(22px);
+		}
+
+		&:last-child {
+			@include breakpoint(medium) {
+				border-right: none;
+			}
+		}
+	}
+
+	&.info {
+		opacity: .8;
+		margin: rem-calc(0 -9px) !important;
+
+		li {
+			@include breakpoint(medium) {
+				padding: rem-calc(0 9px);
+			}
+		}
+	}
+}
