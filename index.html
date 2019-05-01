@@ -16,11 +16,29 @@
 <body>
 	<noscript><div>Javascript must be enabled for the correct page display</div></noscript>
 
-	<!-- doesn't wrap on any screen size -->
+	<h2>Old "float" grid doesn't wrap on any screen size</h2>
 	<div class="row">
 		<div class="column small-6">LEFT COLUMN</div>
 		<div class="column small-6">RIGHT COLUMN</div>
 	</div>
+	<br />
+	<br />
+
+	<h2>New "xy" grid does wrap as expected</h2>
+	<div class="grid-x">
+		<div class="cell">full width cell</div>
+		<div class="cell">full width cell</div>
+	  </div>
+	  <div class="grid-x">
+		<div class="cell small-6">6 cells</div>
+		<div class="cell small-6">6 cells</div>
+	  </div>
+	  <div class="grid-x">
+		<div class="cell medium-6 large-4">12/6/4 cells</div>
+		<div class="cell medium-6 large-8">12/6/8 cells</div>
+	</div>	
+	<br />
+	<br />
 
 	<div id="wrapper">
 		<a class="accessibility" href="#main" accesskey="S">Skip to Content</a>
