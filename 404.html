@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example JNCC microsite</title>
+    <link rel="stylesheet" href="frontend/css/app.css">
+    <link rel="shortcut icon" href="frontend/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+    <script>window.jQuery || document.write('<script src="frontend/js/lib/jquery-3.3.1.min.js" defer><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/js/foundation.min.js" defer></script>
+    <script src="frontend/js/app.js" defer></script>
+</head>
+
+<body>
+    <noscript>
+        <div>Javascript must be enabled for the correct page display</div>
+    </noscript>
+    <div id="wrapper">
+        <a class="accessibility" href="#main" accesskey="S">Skip to Content</a>
+        <header id="header">
+            <div class="container">
+                <strong class="logo">
+                    <a href="#" accesskey="1"><img src="frontend/images/logo.png" alt="JNCC"></a>
+                </strong>
+                <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group"
+                    id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
+                    <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
+                    <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field"
+                        id="search-field">
+                    <button class="input-group-button" aria-label="search-button"><i class="icon-search"></i></button>
+                </form>
+                <div class="show-for-small-only">
+                    <div class="title-bar" data-responsive-toggle="search-form" data-hide-for="medium">
+                        <button type="button" class="search-opener" data-toggle="search-form"
+                            aria-label="search-opener"><i class="icon-search"></i></button>
+                    </div>
+                    <div class="title-bar" data-responsive-toggle="menu" data-hide-for="medium">
+                        <button type="button" class="nav-opener" data-toggle="menu" data-responsive-toggle="menu"
+                            aria-label="navigation-opener"><span></span></button>
+                    </div>
+                </div>
+            </div>
+            <nav class="top-bar nav" id="menu" data-animate="hinge-in-from-top spin-out" aria-label="main-navigation"
+                style="position: relative;">
+                <div class="container">
+                    <ul class="vertical medium-horizontal menu dropdown">
+                        <li><a href="#"><i class="fas fa-chevron-left fa-fw"></i> Main site</a></li>
+                        <li class=""><a href="#"><i class="fas fa-database fa-fw"></i> Microsite name</a></li>
+                        <li><a href="#">Search</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main id="main">
+            <div class="container">
+
+                <div class="two-columns">
+                    <div id="content">
+                        <h1>Page Not Found</h1>
+                        <p>Sorry, we've not been able to find the page you requested.&nbsp;</p>
+                        <p>If you entered a web address, please check it was correct.&nbsp; You can also <a
+                                href="https://jncc.gov.uk/" title="Home">browse&nbsp;from the homepage</a> or use the
+                            search box above to find the
+                            information you need.</p>
+                        <p>Alternatively, you can search and browse for information from previous versions of the JNCC
+                            website on the <a rel="noopener"
+                                href="https://webarchive.nationalarchives.gov.uk/*/jncc.defra.gov.uk" target="_blank">UK
+                                Government Web Archive</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer id="footer" class="text-center medium-text-left">
+            <div class="container">
+                <div class="row">
+                    <div class="columns small-12 medium-4">
+                        <nav class="holder" id="footer-nav" aria-label="footer-navigation">
+                            <h3>About Us</h3>
+                            <ul class="footer-nav no-bullet">
+                                <li><a href="https://jncc.gov.uk/about-jncc/">About JNCC</a></li>
+                                <li><a href="https://jncc.gov.uk/about-jncc/corporate-information/contact-us/">Contact
+                                        us</a></li>
+                                <li><a
+                                        href="https://jncc.gov.uk/about-jncc/corporate-information/procurement/">Procurement</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="columns small-12 medium-4">
+                        <nav class="holder" aria-label="footer-navigation">
+                            <h3>Our Work</h3>
+                            <ul class="footer-nav no-bullet">
+                                <li><a href="https://hub.jncc.gov.uk/">Resource hub</a></li>
+                                <li><a href="https://jncc.gov.uk/news/">News</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="columns small-12 medium-4">
+                        <nav class="holder" aria-label="footer-navigation">
+                            <h3>Our Services</h3>
+                            <ul class="footer-nav no-bullet">
+                                <li><a href="https://jncc.gov.uk/our-role/">Our role</a></li>
+                                <li><a href="https://jncc.gov.uk/monitoring/">Monitoring</a></li>
+                                <li><a href="https://jncc.gov.uk/evaluating/">Evaluating</a></li>
+                                <li><a href="https://jncc.gov.uk/advice/">Advice</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <ul class="social-media no-bullet">
+                    <li><a href="https://twitter.com/JNCC_UK" target="_blank"><span class="show-for-sr">twitter</span><i
+                                class="icon-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/JNCCUK" target="_blank"><span
+                                class="show-for-sr">facebook</span><i class="icon-facebook"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/jncc" target="_blank"><span
+                                class="show-for-sr">linkedin</span><i class="icon-linkedin"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UC14QLVv3QA1Xu6Fjdn7GJnw"><span
+                                class="show-for-sr">youtube</span><i class="icon-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <p>© Joint Nature Conservation Committee, Monkstone House, City Road, Peterborough, PE1 1JY<br>Tel:
+                        01733 562626 Fax: 01733 555948 Email: comment@jncc.gov.uk<br>JNCC SUPPORT CO. Registered in
+                        England and Wales. Company no. 05380206. Registered office as above</p>
+                    <ul class="footer-bottom-list no-bullet info">
+                        <li><a href="https://jncc.gov.uk/about-jncc/corporate-information/privacy-statement/">Privacy
+                                statement</a></li>
+                        <li><a href="https://jncc.gov.uk/about-jncc/corporate-information/accessibility-statement/">Accessibility
+                                statement</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
