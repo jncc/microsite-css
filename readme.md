@@ -17,7 +17,7 @@ Notes
 -----
 
 - The JNCC logo always takes you to the JNCC home page
-- Search in the header is over the full JNCC site, for consistency with the main website. Microsite search, if needed, can be done in some other way appropriate to the microsite.
+- Search in the header forwards the query to a separate JNCC search site for consistency. Microsite search, if needed, can be done in some other way appropriate to the microsite.
 - The first menu item is `< Main site`. Users do not all look at or understand URLs. The microsites just "look like a different menu" in the JNCC Website. The first menu item is the name of the microsite, and any subsequent menu items within the microsite can go to the right.
 - The logo next to the Microsite name is the database icon by default but could be something else if you can find something better.
 - If you don't want the massive 'hero image' on a page, you annoyingly need to add the class `no-page-hero` to the `top-bar nav` element, which is probably going to be in your master page template.
